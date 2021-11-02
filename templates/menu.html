@@ -10,7 +10,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="{% static 'images/logoo.png' %}" style="height: 50px;" alt="">    </a>
+        <img src="{% static 'images/logo.png' %}" style="height: 25px;" alt="">    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -30,22 +30,22 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a class="nav-link active" aria-current="page" href="{% url 'parceiros' %}"
             >Parceiros</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a class="nav-link active" aria-current="page" href="{% url 'sobre' %}"
             >Sobre nós</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'leiaprendiz' %}"
+          <a class="nav-link active" aria-current="page" href="{% url 'lei' %}"
             >Lei</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a class="nav-link active" aria-current="page" href="{% url 'dicas' %}"
             >Dicas</a>
         </li>
       </ul>

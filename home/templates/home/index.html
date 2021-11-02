@@ -7,32 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Pagina principal interdace do JobTeens">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <title>Inicio</title>
 </head>
 
 <body>
-{% include 'menu.html' %}
-    <div class="teste"></div>
-
+    {% include 'menu.html' %}
+    {% include 'carrosel.html' %}
+    <br>
     <div class="jumbotron jumbotron-fluid bg-white text-black">
         <div class="container">
-            <h1 class="display-4 ">Somos JobsTeen!!</h1>
-            <p class="lead">Desde Março de 2019, oferecemos uma solução tecnológica para empresas recrutarem os
+            <h1 class="display-4 ">Somos JobsTeen!!</h1><br>
+            <p class="lead" style="align=justify;" >Desde Março de 2019, oferecemos uma solução tecnológica para empresas recrutarem os
                 melhores
                 jovens de forma simples, aprimorando seus processos seletivos, ao unir tecnologia, inovação,
                 propósito,
                 educação e um time inspirado em levar oportunidades à juventude brasileira, como pilares do seu
                 trabalho.</p>
         </div>
-    </div>
-
+    </div><br>
     <main class="cards">
         <section class="card contact">
             <div class="icon">
-                <img src="#" alt="">
+                <img src="{% static 'images/logo_missao.png' %}" alt="">
             </div>
             <h3>Missão</h3>
             <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
@@ -40,7 +39,7 @@
         </section>
         <section class="card shop">
             <div class="icon">
-                <img src="#" alt="">
+                <img src="{% static 'images/logo_visao.png' %}" alt="">
             </div>
             <h3>Visão</h3>
             <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
@@ -48,16 +47,16 @@
         </section>
         <section class="card about">
             <div class="icon">
-                <img src="#" alt="">
+                <img src="{% static 'images/logo_valores.png' %}" alt="">
             </div>
             <h3>Valores</h3>
             <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
                 entre jovem e oportunidade.</span>
         </section>
-    </main>
+    </main><br>
 
     <div class="jumbotron jumbotron-fluid bg-white text-black">
-        <div class="container">
+        <div class="container"><br>
             <h1 class="display-4">Você ja conhece a lei do Jovem Aprendiz?</h1>
             <p class="lead">No âmbito da Lei da Aprendizagem, aprendiz é o jovem que estuda e trabalha, recebendo,
                 ao
@@ -69,40 +68,40 @@
                 estar matriculado. No âmbito da Lei da Aprendizagem, aprendiz é o jovem que estuda e trabalha,
                 recebendo,ao mesmo tempo,formação na profissão para a qual está se capacitando. Deve cursar a escola
                 regular e estar matriculado.</p>
-            <br><br>
+            <br>
             <p class="lead">
                 <a class="btn btn-primary" href="#" role="button">Saiba Mais!!</a>
             </p>
         </div>
 
-        <div class="container">
+        <div class="container"><br>
             <h1 class="display-4">Depoimentos</h1>
         </div>
 
-    <main class="depoimento">
-        <section class="depoimento contact">
-            <h3>Vitoria Izaine</h3>
-			<h6>Bosch-Campinas</h6>
-            <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
-                entre jovem e oportunidade.</span>
-        </section>
+        <main class="depoimento">
+            <section class="depoimento contact">
+                <h3>Vitoria Izaine</h3>
+                <h6>Bosch-Campinas</h6>
+                <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
+                    entre jovem e oportunidade.</span>
+            </section>
 
-       <section class="depoimento contact">
-            <h3>Vitoria Santos</h3>
-			<h6>Bosch-Campinas</h6>
-            <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
-                entre jovem e oportunidade.</span>
-        </section>
+            <section class="depoimento contact">
+                <h3>Vitoria Santos</h3>
+                <h6>Bosch-Campinas</h6>
+                <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
+                    entre jovem e oportunidade.</span>
+            </section>
 
-        <section class="depoimento contact">
-            <h3>Vitoria Mari</h3>
-			<h6>Bosch-Campinas</h6>
-            <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
-                entre jovem e oportunidade.</span>
-        </section>
-    </main>
+            <section class="depoimento contact">
+                <h3>Vitoria Mari</h3>
+                <h6>Bosch-Campinas</h6>
+                <span>Revolucionar a forma como jovens e recrutadores se conectam para então, garantir o match perfeito
+                    entre jovem e oportunidade.</span>
+            </section>
+        </main>
     </div>
-{% include 'footer.html' %}
+    {% include 'footer.html' %}
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
